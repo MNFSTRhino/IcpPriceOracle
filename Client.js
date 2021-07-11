@@ -13,7 +13,7 @@ async function retrieveLatestIcpPrice () {
   const resp = await axios({
     url: 'https://api.binance.com/api/v3/ticker/price',
     params: {
-      symbol: 'ICPUSDT'
+      symbol: 'ICPBUSD'
     },
     method: 'get'
   })
