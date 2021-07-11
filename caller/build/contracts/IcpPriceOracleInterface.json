@@ -15,7 +15,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLatestIcpPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/swaich/Projects/IcpPriceOracle/caller/contracts/IcpPriceOracleInterface.sol\":\"IcpPriceOracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/swaich/Projects/IcpPriceOracle/caller/contracts/IcpPriceOracleInterface.sol\":{\"keccak256\":\"0x5cb6c2f135533a48c08fc60caab41cee767a3ce5aad5d3f163d08fe4d95c8f10\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f1afb5e73bc923dbb670a0f0ad92bde6b503e90acb9284855f148034582e72a5\",\"dweb:/ipfs/Qmc8zbMz18yQYR9a6G9qKiFDXejUV2of5xwYPfVvDivxcS\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLatestIcpPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IcpPriceOracleInterface.sol\":\"IcpPriceOracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IcpPriceOracleInterface.sol\":{\"keccak256\":\"0xa221b9afef55164ac6fca240efffa770557f2566dca7b63683a7fad72417ed4d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bdc97bc5b31b410a22de5d1375df2b7d343acbcd849ed10ccab42565dff1d997\",\"dweb:/ipfs/QmShVvvcTZUXZzgLpP1NgzJHzvHSszLw5JarMZzP1yG1rX\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -23,28 +23,28 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\nabstract contract IcpPriceOracleInterface {\n    function getLatestIcpPrice() public virtual returns (uint256);\n}",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\nabstract contract IcpPriceOracleInterface {\n  function getLatestIcpPrice() public virtual returns (uint256);\n}\n",
   "sourcePath": "/home/swaich/Projects/IcpPriceOracle/caller/contracts/IcpPriceOracleInterface.sol",
   "ast": {
-    "absolutePath": "/home/swaich/Projects/IcpPriceOracle/caller/contracts/IcpPriceOracleInterface.sol",
+    "absolutePath": "project:/contracts/IcpPriceOracleInterface.sol",
     "exportedSymbols": {
       "IcpPriceOracleInterface": [
-        122
+        249
       ]
     },
-    "id": 123,
+    "id": 250,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 116,
+        "id": 243,
         "literals": [
           "solidity",
           "0.8",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:1"
+        "src": "33:22:3"
       },
       {
         "abstract": true,
@@ -52,39 +52,39 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": false,
-        "id": 122,
+        "id": 249,
         "linearizedBaseContracts": [
-          122
+          249
         ],
         "name": "IcpPriceOracleInterface",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "9b956833",
-            "id": 121,
+            "id": 248,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getLatestIcpPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 117,
+              "id": 244,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "130:2:1"
+              "src": "128:2:3"
             },
             "returnParameters": {
-              "id": 120,
+              "id": 247,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 119,
+                  "id": 246,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 121,
-                  "src": "157:7:1",
+                  "scope": 248,
+                  "src": "155:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -92,10 +92,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 118,
+                    "id": 245,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "157:7:1",
+                    "src": "155:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -104,41 +104,41 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "156:9:1"
+              "src": "154:9:3"
             },
-            "scope": 122,
-            "src": "104:62:1",
+            "scope": 249,
+            "src": "102:62:3",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 123,
-        "src": "56:112:1"
+        "scope": 250,
+        "src": "56:110:3"
       }
     ],
-    "src": "33:135:1"
+    "src": "33:134:3"
   },
   "legacyAST": {
-    "absolutePath": "/home/swaich/Projects/IcpPriceOracle/caller/contracts/IcpPriceOracleInterface.sol",
+    "absolutePath": "project:/contracts/IcpPriceOracleInterface.sol",
     "exportedSymbols": {
       "IcpPriceOracleInterface": [
-        122
+        249
       ]
     },
-    "id": 123,
+    "id": 250,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 116,
+        "id": 243,
         "literals": [
           "solidity",
           "0.8",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:1"
+        "src": "33:22:3"
       },
       {
         "abstract": true,
@@ -146,39 +146,39 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": false,
-        "id": 122,
+        "id": 249,
         "linearizedBaseContracts": [
-          122
+          249
         ],
         "name": "IcpPriceOracleInterface",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "9b956833",
-            "id": 121,
+            "id": 248,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getLatestIcpPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 117,
+              "id": 244,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "130:2:1"
+              "src": "128:2:3"
             },
             "returnParameters": {
-              "id": 120,
+              "id": 247,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 119,
+                  "id": 246,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 121,
-                  "src": "157:7:1",
+                  "scope": 248,
+                  "src": "155:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -186,10 +186,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 118,
+                    "id": 245,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "157:7:1",
+                    "src": "155:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -198,20 +198,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "156:9:1"
+              "src": "154:9:3"
             },
-            "scope": 122,
-            "src": "104:62:1",
+            "scope": 249,
+            "src": "102:62:3",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 123,
-        "src": "56:112:1"
+        "scope": 250,
+        "src": "56:110:3"
       }
     ],
-    "src": "33:135:1"
+    "src": "33:134:3"
   },
   "compiler": {
     "name": "solc",
@@ -219,7 +219,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-03T17:26:39.533Z",
+  "updatedAt": "2021-07-11T18:30:12.508Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

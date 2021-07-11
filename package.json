@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:oracle": "cd oracle && npx truffle migrate --network extdev --reset -all && cd ..",
+    "deploy:caller": "cd caller && npx truffle migrate --network extdev --reset -all && cd ..",
+    "deploy:all": "npm run deploy:oracle && npm run deploy:caller"
   },
   "repository": {
     "type": "git",
@@ -16,13 +19,13 @@
     "url": "https://github.com/SwaichSaheb/IcpPriceOracle/issues"
   },
   "homepage": "https://github.com/SwaichSaheb/IcpPriceOracle#readme",
-  "description": "",
+  "description": "ICP Price Oracle",
   "dependencies": {
     "axios": "^0.21.1",
     "bn.js": "^5.2.0",
     "loom-js": "^1.55.0",
     "loom-truffle-provider": "^0.13.0",
     "openzeppelin-solidity": "^4.2.0",
-    "truffle": "^5.3.13"
+    "truffle": "^5.4.0"
   }
 }
